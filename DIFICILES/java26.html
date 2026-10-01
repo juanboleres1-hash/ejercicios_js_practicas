@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="java26.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Cuenta Regresiva</h2>
+
+        <div class="input-container">
+            <label for="inputSegundos">Segundos:</label>
+            <input type="number" id="inputSegundos" placeholder="Ej: 10" min="1">
+            <button id="btnIniciar">Iniciar</button>
+        </div>
+
+        <div class="timer-display">
+            <span id="contador">00</span>
+        </div>
+
+        <p id="mensajeFinal" class="mensaje"></p>
+    </div>
+
+    <script src="java26.js"></script>
+</body>
+</html>

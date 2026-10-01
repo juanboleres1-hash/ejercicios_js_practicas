@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras Simple</title>
+    <link rel="stylesheet" href="java23.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Productos</h1>
+        
+        
+        <div class="productos-grid">
+            <div class="producto-card">
+                <h3>Camisa</h3>
+                <p class="precio">Q15.00</p>
+                <button class="btn-agregar" data-precio="15">Agregar al carrito</button>
+            </div>
+
+            <div class="producto-card">
+                <h3>Zapatos</h3>
+                <p class="precio">Q45.50</p>
+                <button class="btn-agregar" data-precio="45.5">Agregar al carrito</button>
+            </div>
+
+            <div class="producto-card">
+                <h3>Gorra</h3>
+                <p class="precio">Q12.00</p>
+                <button class="btn-agregar" data-precio="12">Agregar al carrito</button>
+            </div>
+        </div>
+       <div class="carrito-resumen">
+            <h2>Resumen del Carrito</h2>
+            <p>Ítems agregados: <span id="contadorItems">0</span></p>
+            <p>Total a pagar: Q<span id="totalPagar">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="java23.js"></script>
+</body>
+</html>

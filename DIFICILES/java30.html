@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo Validado</title>
+    <link rel="stylesheet" href="java30.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Registro</h2>
+
+        <form id="completeForm">
+            <div class="campo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ej: Ana Gómez">
+                <span id="errorNombre" class="error"></span>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="text" id="correo" placeholder="Usuario@ejemplo.com">
+                <span id="errorCorreo" class="error"></span>
+            </div>
+
+            <div class="campo">
+                <label for="plan">Selecciona un Plan</label>
+                <select id="plan">
+                    <option value="">-- Elige una opción --</option>
+                    <option value="basico">Plan Básico</option>
+                    <option value="pro">Plan Pro</option>
+                    <option value="premium">Plan Premium</option>
+                </select>
+                <span id="errorPlan" class="error"></span>
+            </div>
+
+            <div class="campo-checkbox">
+                <input type="checkbox" id="terminos">
+                <label for="terminos" class="label-checkbox">Acepto los términos y condiciones</label>
+            </div>
+            <span id="errorTerminos" class="error error-checkbox"></span>
+
+            <button type="submit" id="btnEnviar">Completar Registro</button>
+        </form>
+
+        <div id="mensajeExito" class="mensaje-exito oculto">
+            <h3>¡Registro Exitoso!</h3>
+            <p>Gracias por unirte, hemos verificado todos tus datos correctamente.</p>
+        </div>
+    </div>
+
+    <script src="java30.js"></script>
+</body>
+</html>
