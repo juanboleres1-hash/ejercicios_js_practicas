@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador y Ordenador de Tabla</title>
+    <link rel="stylesheet" href="java36.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Catálogo de Productos</h2>
+
+        <div class="controls">
+            <input type="text" id="buscador" placeholder="Buscar producto por nombre...">
+            <div class="sort-buttons">
+                <button id="btnOrdenarNombre">Ordenar por Nombre</button>
+                <button id="btnOrdenarPrecio">Ordenar por Precio</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Precio ($)</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuerpo">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="java36.js"></script>
+</body>
+</html>

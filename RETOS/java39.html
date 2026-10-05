@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación con Expresiones Regulares</title>
+    <link rel="stylesheet" href="java39.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Registro Avanzado</h2>
+
+        <form id="regForm" novalidate>
+            <div class="campo">
+                <label for="email">Correo Electrónico</label>
+                <input type="text" id="email" placeholder="ejemplo@correo.com">
+                <span class="error" id="errorEmail"></span>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono (8 a 10 dígitos)</label>
+                <input type="text" id="telefono" placeholder="Ej. 5512345678">
+                <span class="error" id="errorTelefono"></span>
+            </div>
+
+            <div class="campo">
+                <label for="password">Contraseña Segura</label>
+                <input type="password" id="password" placeholder="Mínimo 8 caracteres, 1 mayúscula, 1 número y 1 símbolo">
+                <span class="error" id="errorPassword"></span>
+            </div>
+
+            <button type="submit">Validar y Registrar</button>
+            <p id="exitoMensaje" class="success"></p>
+        </form>
+    </div>
+
+    <script src="java39.js"></script>
+</body>
+</html>

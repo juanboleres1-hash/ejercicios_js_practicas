@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Tareas con Estadísticas</title>
+    <link rel="stylesheet" href="java40.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Panel de Tareas</h2>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCount">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="pendingCount">0</span>
+                <span class="stat-label">Pendientes</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="completedCount">0</span>
+                <span class="stat-label">Completadas</span>
+            </div>
+        </div>
+
+        <form id="taskForm" class="task-form">
+            <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." required autocomplete="off">
+            <button type="submit">Agregar</button>
+        </form>
+
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <script src="java40.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta en Vivo</title>
+    <link rel="stylesheet" href="java32.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>¿Cuál es tu lenguaje de programación favorito?</h2>
+        <p class="subtitulo">Selecciona una opción para ver los resultados en tiempo real.</p>
+
+        <div class="opciones-container">
+            <button class="btn-votar" data-opcion="javascript">
+                JavaScript <span class="votos" id="votos-javascript">0 votos</span>
+            </button>
+            <button class="btn-votar" data-opcion="python">
+                Python <span class="votos" id="votos-python">0 votos</span>
+            </button>
+            <button class="btn-votar" data-opcion="java">
+                Java <span class="votos" id="votos-java">0 votos</span>
+            </button>
+        </div>
+
+        <div class="total-container">
+            <p>Total de votos emitidos: <span id="totalVotos">0</span></p>
+        </div>
+    </div>
+
+    <script src="java32.js"></script>
+</body>
+</html>

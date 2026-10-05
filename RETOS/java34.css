@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #22252a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 280px;
+}
+
+.pantalla {
+    background-color: #1a1c20;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: right;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    word-break: break-all;
+    min-height: 40px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #343840;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #454a55;
+}
+
+.btn.operacion {
+    background-color: #ff9f0a;
+}
+
+.btn.operacion:hover {
+    background-color: #e08b00;
+}
+
+.btn.special {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.btn.special:hover {
+    background-color: #8c8c8c;
+}
+
+.cero {
+    grid-column: span 2;
+}
+
+.igual {
+    grid-row: span 2;
+    height: 100%;
+    background-color: #34c759;
+}
+
+.igual:hover {
+    background-color: #28a745;
+}

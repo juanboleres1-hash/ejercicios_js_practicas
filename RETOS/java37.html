@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="java37.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Adivina el Número</h2>
+        <p class="instrucciones">Estoy pensando en un número entre <strong>1 y 100</strong>. ¿Puedes adivinar cuál es?</p>
+
+        <form id="gameForm">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="Ingresa un número" required autocomplete="off">
+            <button type="submit" id="btnAdivinar">Adivinar</button>
+        </form>
+
+        <div class="mensaje-container">
+            <p id="mensajePista"></p>
+            <p id="intentosTexto">Intentos: <span id="contadorIntentos">0</span></p>
+        </div>
+
+        <button id="btnReiniciar" class="btn-reiniciar oculto">Jugar de Nuevo</button>
+    </div>
+
+    <script src="java37.js"></script>
+</body>
+</html>

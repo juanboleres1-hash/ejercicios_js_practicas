@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas con Filtros</title>
+    <link rel="stylesheet" href="java31.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Mi Lista de Tareas Pro</h2>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Añadir nueva tarea...">
+            <button id="addTaskBtn">Agregar</button>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="todas">Todas</button>
+            <button class="filter-btn" data-filter="pendientes">Pendientes</button>
+            <button class="filter-btn" data-filter="completadas">Completadas</button>
+        </div>
+    <ul id="taskList"></ul>
+    </div>
+
+    <script src="java31.js"></script>
+</body>
+</html>

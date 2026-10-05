@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Dinámico según Selección</title>
+    <link rel="stylesheet" href="java38.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Registro de Usuario</h2>
+
+        <form id="registroForm">
+            <div class="campo">
+                <label for="tipoCuenta">Tipo de Cuenta</label>
+                <select id="tipoCuenta" name="tipoCuenta">
+                    <option value="personal">Personal</option>
+                    <option value="empresarial">Empresarial</option>
+                    <option value="estudiantil">Estudiantil</option>
+                </select>
+            </div>
+
+            <div id="seccionEmpresarial" class="seccion-dinamica oculto">
+                <div class="campo">
+                    <label for="nombreEmpresa">Nombre de la Empresa</label>
+                    <input type="text" id="nombreEmpresa" placeholder="Ej. Tech Solutions S.A.">
+                </div>
+                <div class="campo">
+                    <label for="nitEmpresa">NIT / Identificación Fiscal</label>
+                    <input type="text" id="nitEmpresa" placeholder="Ej. 123456789-0">
+                </div>
+            </div>
+
+            <div id="seccionEstudiantil" class="seccion-dinamica oculto">
+                <div class="campo">
+                    <label for="institucion">Institución Educativa</label>
+                    <input type="text" id="institucion" placeholder="Ej. Universidad Nacional">
+                </div>
+                <div class="campo">
+                    <label for="carnet">Número de Carnet</label>
+                    <input type="text" id="carnet" placeholder="Ej. 2026-9876">
+                </div>
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <script src="java38.js"></script>
+</body>
+</html>
