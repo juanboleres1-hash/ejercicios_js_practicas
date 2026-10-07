@@ -49,7 +49,7 @@ function inicializarValidador(formId) {
 
         if (formularioValido) {
             if (exitoMensaje) {
-                exitoMensaje.textContent = "¡Validación exitosa! Formulario enviado correctamente.";
+                exitoMensaje.textContent = "Validación exitosa, Formulario enviado correctamente.";
             }
             form.reset();
         }

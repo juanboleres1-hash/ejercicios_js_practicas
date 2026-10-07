@@ -1,23 +1,23 @@
 const perfiles = [
     {
-        nombre: "Sofía Martínez",
-        cargo: "Desarrolladora Frontend",
-        foto: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150"
+        nombre: "Juan David Boleres",
+        cargo: "Desarrollador Frontend",
+        foto: "JDB.jpeg"
     },
     {
-        nombre: "Carlos Gómez",
+        nombre: "Alvaro Perez",
         cargo: "Ingeniero Backend",
-        foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150"
+        foto: "AP.jpeg"
     },
     {
-        nombre: "Lucía Fernández",
-        cargo: "Diseñadora UI/UX",
-        foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150"
+        nombre: "Jose David Rodriguez",
+        cargo: "Diseñador UI/UX",
+        foto: "JDR.jpeg"
     },
     {
-        nombre: "Mateo Rodríguez",
+        nombre: "Mia Moreira",
         cargo: "Especialista en DevOps",
-        foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150"
+        foto: "MM.jpeg"
     }
 ];
 

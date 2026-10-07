@@ -26,7 +26,7 @@ let potencia = Number(respuesta1) ** Number(respuesta2);
     rl.close();
 }
 //ESTO SERIA NORMAL SIN NODE.JS ES DECIR QUE EN UN DISEÑADOR WEB NORMAL SE PROGRAMARIA ASI:
-// Esto abre una ventana emergente nativa en el navegador
+
 // let numero1 = prompt("Ingresa el primer número:");
 // let numero2 = prompt("Ingresa el segundo número:");
 

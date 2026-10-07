@@ -16,14 +16,14 @@ gameForm.addEventListener("submit", function(e) {
     contadorIntentos.textContent = intentos;
 
     if (numeroUsuario === numeroAleatorio) {
-        mensajePista.textContent = `🎉 ¡Felicitaciones! Adivinaste el número en ${intentos} intentos.`;
+        mensajePista.textContent = `Felicitaciones, Adivinaste el número en ${intentos} intentos.`;
         mensajePista.style.color = "#28a745";
         finalizarJuego();
     } else if (numeroUsuario < numeroAleatorio) {
-        mensajePista.textContent = "📈 El número secreto es MAYOR. ¡Sigue intentando!";
+        mensajePista.textContent = " El número secreto es MAYOR. Sigue intentando";
         mensajePista.style.color = "#d9534f";
     } else {
-        mensajePista.textContent = "📉 El número secreto es MENOR. ¡Sigue intentando!";
+        mensajePista.textContent = " El número secreto es MENOR. Sigue intentando";
         mensajePista.style.color = "#d9534f";
     }
 
